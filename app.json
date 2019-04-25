@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Prueba",
-    "slug": "Prueba",
+    "name": "AppPAP",
+    "slug": "AppPAP",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": [

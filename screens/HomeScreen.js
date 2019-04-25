@@ -1,4 +1,5 @@
 import React from 'react';
+import {TextInput} from 'react-native';
 import {
   Image,
   Platform,
@@ -25,7 +26,7 @@ export default class HomeScreen extends React.Component {
             <Image
               source={
                 __DEV__
-                  ? require('../assets/images/robot-dev.png')
+                  ? require('../assets/images/icon-cervical-vph.png')
                   : require('../assets/images/robot-prod.png')
               }
               style={styles.welcomeImage}
@@ -48,7 +49,7 @@ export default class HomeScreen extends React.Component {
 
           <View style={styles.helpContainer}>
             <TouchableOpacity onPress={this._handleHelpPress} style={styles.helpLink}>
-              <Text style={styles.helpLinkText}>Help, it didn’t automatically reload!</Text>
+              <Text style={styles.helpLinkText}>noad!</Text>
             </TouchableOpacity>
           </View>
         </ScrollView>
@@ -74,8 +75,7 @@ export default class HomeScreen extends React.Component {
 
       return (
         <Text style={styles.developmentModeText}>
-          Development mode is enabled, your app will be slower but you can use useful development
-          tools. {learnMoreButton}
+    
         </Text>
       );
     } else {
@@ -101,7 +101,7 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#95d7d2',
   },
   developmentModeText: {
     marginBottom: 20,
