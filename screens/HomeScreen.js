@@ -11,7 +11,7 @@ export default class App extends Component<{}> {
       
       <Image
            
-            source={require('../assets/images/icon-cervical-vph.png')}
+            source={require('../assets/images/logo.png')}
  
             style={styles.ImageStyle2}
           />
@@ -37,9 +37,9 @@ export default class App extends Component<{}> {
         </View>
          <View>
           <Button
-    containerStyle={{padding:10, height:45, overflow:'hidden', borderRadius:4, backgroundColor: 'white'}}
+    containerStyle={{padding:10, height:45, overflow:'hidden', borderRadius:5, backgroundColor: 'white'}}
     disabledContainerStyle={{backgroundColor: 'grey'}}
-    style={{fontSize: 20, color: 'green'}}>
+    style={{fontSize: 17, color: '#1b4d83'}}>
     Consultar
   </Button>
         </View>
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     margin: 10,
-    backgroundColor: '#db95dd',
+    backgroundColor: '#52c2d8',
   },
  
   SectionStyle: {
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     padding: 10,
     margin: 5,
     height: 100,
-    width: 100,
+    width: 160,
     resizeMode: 'stretch',
     alignItems: 'center',
   },
