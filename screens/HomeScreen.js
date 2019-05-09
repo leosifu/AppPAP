@@ -25,8 +25,12 @@ export default class App extends Component<{}> {
           <ScrollView contentContainerStyle={styles.container}>
 
           <Image
-            source={require('../assets/images/logo.png')}
+            source={require('../assets/images/fff.png')}
             style={styles.ImageStyle2}
+          />
+          <Image
+            source={require('../assets/images/qqq.png')}
+            style={styles.ImageStyle3}
           />
           <View style={styles.SectionStyle}>
             <Image
@@ -59,25 +63,10 @@ export default class App extends Component<{}> {
             placeholder="Ingresa tu R.U.N aquí"
             underlineColorAndroid="transparent"
             onFocus={(event) => this.onFocus(event)}
-          /><TextInput
-            style={{ flex: 1 }}
-            placeholder="Ingresa tu R.U.N aquí"
-            underlineColorAndroid="transparent"
-            onFocus={(event) => this.onFocus(event)}
-          /><TextInput
-            style={{ flex: 1 }}
-            placeholder="Ingresa tu R.U.N aquí"
-            underlineColorAndroid="transparent"
-            onFocus={(event) => this.onFocus(event)}
-          /><TextInput
-            style={{ flex: 1 }}
-            placeholder="Ingresa tu R.U.N aquí"
-            underlineColorAndroid="transparent"
-            onFocus={(event) => this.onFocus(event)}
           />
           <View>
             <Button
-              containerStyle={{padding:10, height:45, overflow:'hidden', borderRadius:5, backgroundColor: 'white'}}
+              containerStyle={{padding:10, height:40, overflow:'hidden', borderRadius:5, backgroundColor: 'white'}}
               disabledContainerStyle={{backgroundColor: '#ffc8eb'}}
               style={{fontSize: 17, color: '#1b4d83'}}>
               Consultar
@@ -91,14 +80,16 @@ export default class App extends Component<{}> {
 
 const styles = StyleSheet.create({
   contenedorGrande: {
+     flex: 1,
+    backgroundColor: '#243771',
     resizeMode: 'cover',
+    borderRadius:50,
   },
   container: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    margin: 10,
-    backgroundColor: '#fff4fb',
+    backgroundColor: '#0089B1',
+    borderRadius: 5,
     resizeMode: 'cover'
   },
 
@@ -108,9 +99,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
     borderWidth: 0.5,
-    borderColor: '#000',
+    borderColor: '#0089B1',
     height: 40,
-    borderRadius: 5,
+    borderRadius:100,
     margin: 10,
   },
 
@@ -126,6 +117,14 @@ const styles = StyleSheet.create({
     padding: 10,
     margin: 5,
     height: 100,
+    width: 190,
+    resizeMode: 'stretch',
+    alignItems: 'center',
+  },
+  ImageStyle3: {
+    padding: 10,
+    margin: 5,
+    height: 140,
     width: 160,
     resizeMode: 'stretch',
     alignItems: 'center',
