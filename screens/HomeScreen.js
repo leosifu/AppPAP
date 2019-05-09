@@ -78,7 +78,7 @@ export default class App extends Component<{}> {
           <View>
             <Button
               containerStyle={{padding:10, height:45, overflow:'hidden', borderRadius:5, backgroundColor: 'white'}}
-              disabledContainerStyle={{backgroundColor: 'grey'}}
+              disabledContainerStyle={{backgroundColor: '#ffc8eb'}}
               style={{fontSize: 17, color: '#1b4d83'}}>
               Consultar
             </Button>
@@ -91,14 +91,14 @@ export default class App extends Component<{}> {
 
 const styles = StyleSheet.create({
   contenedorGrande: {
-    resizeMode: 'cover'
+    resizeMode: 'cover',
   },
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     margin: 10,
-    backgroundColor: '#52c2d8',
+    backgroundColor: '#fff4fb',
     resizeMode: 'cover'
   },
 
